@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Server : MonoBehaviour
 {
-    public float game_time = 0;
+    float game_time = 0f;
 
-    public int ticks = 0;
+    int ticks = 0;
     float game_tick = 0.05f; //game tick in seconds
     float tick_timer = 0;
 
@@ -19,6 +19,13 @@ public class Server : MonoBehaviour
 
             tick_timer -= game_tick;
             ticks += 1;
+
+            ProcessTick();
         }
+    }
+
+    void ProcessTick()
+    {
+        Debug.Log(ticks);
     }
 }
