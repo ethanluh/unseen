@@ -6,7 +6,7 @@ public class Server : MonoBehaviour
 {
     float game_time = 0f;
 
-    int ticks = 0;
+    public int ticks = 0;
     float game_tick = 0.05f; //game tick in seconds
     float tick_timer = 0;
 
@@ -26,6 +26,6 @@ public class Server : MonoBehaviour
 
     void ProcessTick()
     {
-        Debug.Log(ticks);
+        // Debug.Log(ticks);
     }
 }
